@@ -8,7 +8,7 @@ import com.EasyEMI.qa.Base.TestBase;
 
 public class LoginPage extends TestBase {
   
-	//Page factory ---Object repository
+	//Page factory ---Object repository: Test comment added by sachin
 	
 	@FindBy(id="userName")
 	WebElement userName;
