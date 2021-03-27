@@ -24,8 +24,7 @@ public class TestBase {
 		//Read properties file 
 		 try {
 			prop= new Properties();
-			FileInputStream fi= new FileInputStream("D:\\Automation\\HDFC_CD_EasyEMI\\src\\main\\java"
-					+ "+\\com\\EasyEMI\\qa\\Config\\Config.properties");
+			FileInputStream fi= new FileInputStream("C:\\Users\\Lenovo\\git\\repository\\HDFC_CD_EasyEMI\\src\\main\\java\\com\\EasyEMI\\qa\\Config\\Config.properties");
 			prop.load(fi);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -37,8 +36,7 @@ public class TestBase {
 	public static void initialization() {
 		String BrowserName= prop.getProperty("Brower");
 		if (BrowserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\HDFC_CD_EasyEMI\\"
-					+ "+Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\git\\repository\\HDFC_CD_EasyEMI\\Drivers\\chromedriver.exe");
 			driver= new ChromeDriver();
 			System.out.println("Chrome brower executed");
 		}else if (BrowserName.equals("FF")) {

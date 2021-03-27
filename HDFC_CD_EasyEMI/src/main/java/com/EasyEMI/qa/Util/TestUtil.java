@@ -2,8 +2,8 @@ package com.EasyEMI.qa.Util;
 
 public class TestUtil {
 
-	public static int PAGE_LOAD_TIMEOUT=20;
-	public static int IMPLICIT_WAIT=10;
+	public static int PAGE_LOAD_TIMEOUT=50;
+	public static int IMPLICIT_WAIT=50;
 	
 	
 	
